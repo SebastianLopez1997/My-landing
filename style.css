@@ -19,7 +19,7 @@ body {
 }
 
 .menu-nabvar {
-  margin-top: 20px;  
+  margin-top: 20px;
   color: white;
   width: 100%;
   display: flex;
@@ -32,8 +32,6 @@ li {
   text-decoration: none;
 }
 
-
-
 .presentation {
   display: flex;
 }
@@ -43,15 +41,15 @@ li {
   text-decoration: none;
 }
 
-.menu-nabvar li:hover{
-    color: rgba(95, 28, 155, 0.758);
-    transform: translate(10px);
-    transition: 1s;
+.menu-nabvar li:hover {
+  color: rgba(95, 28, 155, 0.758);
+  transform: translate(10px);
+  transition: 1s;
 }
 
-.menu-nabvar li a:hover{
-    color: rgba(95, 28, 155, 0.758);
-    transition: 1s;
+.menu-nabvar li a:hover {
+  color: rgba(95, 28, 155, 0.758);
+  transition: 1s;
 }
 
 .main h1 {
@@ -59,6 +57,20 @@ li {
   text-align: center;
   color: rgba(222, 222, 223, 0.713);
   font-size: 3rem;
+}
+
+.main h1 span {
+  transition: 0.9s linear;
+}
+
+h1:hover span:nth-child(1) {
+  text-shadow: 0 0 10px #fff, 0 0 14px #fff;
+  margin-right: 9px;
+}
+
+h1:hover span:nth-child(1)::after {
+  transition: 0.6s;
+  content: "{$}";
 }
 
 .presentation {
@@ -76,6 +88,10 @@ li {
   font-size: 1.3rem;
 }
 
+.main-1 p {
+  margin-top: 23px;
+}
+
 .main-2 {
   margin-top: 100px;
   width: 50%;
@@ -89,69 +105,118 @@ li {
 }
 
 .main-2 ul li a {
-    color: rgba(222, 222, 223, 0.713);
+  color: rgba(222, 222, 223, 0.713);
 }
 
-.main-3 h3{
-    margin-top: 90px;
-    text-align: center;
-    color: rgba(222, 222, 223, 0.713);
-    font-size: 2.7rem;
+.main-3 h3 {
+  margin-top: 90px;
+  text-align: center;
+  color: rgba(222, 222, 223, 0.713);
+  font-size: 2.7rem;
 }
 
-.main-3-info{
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-around;
-    color: rgba(222, 222, 223, 0.713);
-    font-size: 1.4rem;
+.main-3-info {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  color: rgba(222, 222, 223, 0.713);
+  font-size: 1.4rem;
 }
 
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-footer h5{
-margin-top: 50px;
-    color: aliceblue;
-    font-size: 1.75rem;
+footer h5 {
+  margin-top: 50px;
+  color: aliceblue;
+  font-size: 1.75rem;
 }
 
-.form{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    width: 400px;
-    height: 220px;
-    background-color: rgba(0, 0, 0, 0.232);
-    border-color: rgb(232, 12, 12);
-    border-radius: 20px;
-    padding: 20px;
-    margin: auto;
-    gap: 7px;
-    box-shadow: 7px 13px 37px #000;
+.form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 400px;
+  height: 220px;
+  background-color: rgba(0, 0, 0, 0.232);
+  border-color: rgb(232, 12, 12);
+  border-radius: 20px;
+  padding: 20px;
+  margin: auto;
+  gap: 7px;
+  box-shadow: 7px 13px 37px #000;
 }
 
-.controls{
-    width: 90%;
-    background-color: rgba(222, 222, 223, 0.713);
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 16px;
-    border: 1px solid;
-    font-size: 18px;
+.controls {
+  width: 90%;
+  background-color: rgba(222, 222, 223, 0.713);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  border: 1px solid;
+  font-size: 18px;
 }
 
-.button{
-    color: white;
-    font-size: 20px;
-    background: linear-gradient(
+.button {
+  color: white;
+  font-size: 20px;
+  background: linear-gradient(
     90deg,
     rgba(58, 97, 180, 1) 0%,
     rgba(60, 73, 171, 1) 50%,
     rgba(0, 0, 0, 1) 100%
   );
+}
+
+@media (max-width: 1100px) {
+  .main h1 {
+    font-size: 2rem;
+  }
+  .main-1 {
+    font-size: 1rem;
+  }
+  .main-2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .main-3-info {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 590px) {
+  .main h1 {
+    font-size: 1.2rem;
+  }
+  .presentation {
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-1{
+    margin-top: 15%;
+    width: 100%;
+  }
+  .main-2{
+    margin-top: 2%;
+    width: 100%;
+  }
+  .main-3 h3{
+    font-size: 2rem;
+    
+  }
+  .main-3-info{
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 13%;
+    width: 100%;
+    font-size: 1rem;
+  }
 }
